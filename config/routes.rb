@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   # delete 'bookmarks/:id', to: 'bookmarks#destroy'
 
   resources :lists do
-    resources :bookmarks, only: [ :new, :create, :destroy ]
+    resources :bookmarks, only: [:new, :create, :destroy]
   end
 end

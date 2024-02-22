@@ -6,6 +6,15 @@
 <ul>
 
 
+<h2><strong>Movies</strong></h2>
+<ul class="list-group">
+  <% @list.bookmarks.each do |bookmark| %>
+    <li class="list-group-item"><%= bookmark.movie.title %></li>
+    <li class="list-group-item"><%= bookmark.comment %></li>
+  <% end %>
+</ul>
+<br>
+
 
 <div>
 <%= link_to "BACK ", lists_path%>
