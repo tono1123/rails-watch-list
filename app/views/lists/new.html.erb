@@ -1,0 +1,17 @@
+<h1>List#new</h1>
+  <br>
+  <br>
+
+
+<%= form_with model: @list do |f| %>
+  <%= f.label :List_name %>
+  <%= f.text_field :name %>
+<br>
+<br>
+<br>
+<%= f.submit %>
+<% end %>
+<br>
+<div>
+<%= link_to "BACK ", lists_path(@lists)%>
+</div>

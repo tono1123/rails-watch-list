@@ -1,0 +1,17 @@
+<h1>List#info</h1>
+
+<ul>
+<li><%= @list.name %></li>
+
+<ul>
+
+
+
+<div>
+<%= link_to "BACK ", lists_path%>
+</div>
+<br>
+
+<div>
+<%= link_to " add a bookmark ",  new_list_bookmark_path(@list) %>
+</div>

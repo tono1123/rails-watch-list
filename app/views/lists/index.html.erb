@@ -1,0 +1,14 @@
+
+<div >
+  <h1 > Here is the list of the lists 📃</h1>
+</div>
+
+<%= link_to "🆕", "lists/new" %>
+<br>
+<br>
+<br>
+<ul>
+<% @lists.each do |list| %>
+  <li><%= link_to list.name, list_path(list)%></li>
+<% end %>
+</ul>
